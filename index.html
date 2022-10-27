@@ -1,26 +1,101 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav class="menu">
-      <ul>
-        <li><a href="#libros">Libros</a></li>
-      </ul>
-    </nav><br>
 
-    <table id="libros" border="1">
-      <thead>
-        <th>Libros</th>
-      </thead>
-    </table>
-  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="padre">
+    <header class="header">
+      <div class="container">
+        <a href="#Inicio" class="logo"><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Harry_Potter_wordmark.svg/800px-Harry_Potter_wordmark.svg.png"
+            style="width: 100px; padding-left:20px"></a>
+        <label for="menu" class="nav-label">
+          <img
+            src="https://raw.githubusercontent.com/nicole11robayo/DEV001-data-lovers/main/src/src_imagenes/3844438-hamburger-menu-more-navigation_110319.png"
+            style="width: 45px" class="nav-img">
+        </label>
+        <!--despues del elemento checkbox,tiene que ir mi lista de menu para que este checkbox funcione como queremos-->
+        <input type="checkbox" id="menu" class="nav-input">
+
+        <nav class="navigation">
+          <ul>
+            <li><a href="#Inicio" class="nav-item">Inicio</a></li>
+
+            <li><a href="#Data_libros" class="nav-item">Libros</a></li>
+            <li><a href="#Personajes" class="nav-item">Personajes</a></li>
+            <li><a href="#Pociones" class="nav-item">Pociones</a></li>
+            <li><a href="#Hechizos" class="nav-item">Hechizos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="Inicio" id="Inicio">
+        <div id="recuadro">
+          <div id="descripcion">
+            <p id="textoDescripcion">Harry Potter es una serie de novelas fantásticas escrita por la autora
+              británica J. K. Rowling, en la que se describen las aventuras del joven
+              aprendiz de magia y hechicería Harry Potter y sus amigos Hermione
+              Granger y Ron Weasley, durante los años que pasan en el Colegio
+              Hogwarts de Magia y Hechicería
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="Libros" id="Data_libros">
+        <h1 class="h1Seccion">libros</h1>
+        <div id="libros">
+        </div>
+        <div id="botonprueba">
+          <!--<button  id="myBtn">Ver más</button>-->
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div id="libros1"></div>
+            </div>
+          </div>
+        </div>
+        <div id="libros1"></div>
+      </section>
+
+      <section class="Personajes" id="Personajes">
+        <h1 class="h1Seccion">Personajes</h1>
+        <div id="Personajes"></div>
+        <div id="personajes1"></div>
+      </section>
+|
 
 
-    <script src="main.js" type="module"></script>
-  </body>
+      <section class="Pociones" id="Pociones">
+        <h1 class="h1Seccion">Pociones</h1>
+        <div id="pociones"></div>
+      </section>
+
+      <section class="Hechizos" id="Hechizos">
+
+        <h1 class="h1Seccion">Hechizos</h1>
+        <div id="hechizos"></div>
+       
+      </section>
+
+      <section id="Personajes">
+
+      </section>
+    </main>
+    <footer class="footer">
+      Diseñado por Nicole Robayo Y Jennyfer Gamboa
+    </footer>
+  </div>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
