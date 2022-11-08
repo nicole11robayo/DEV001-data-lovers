@@ -412,8 +412,7 @@ h1 {
 						cursor: pointer;
 					}
 
-					#personajes1{					
-					}
+					
 					.contenedorCeldas3 {
 						display: flex;
 						flex-flow: row wrap;
@@ -539,7 +538,7 @@ h1 {
 					.close2 {
 						color: #aaaaaa;
 						float: right;
-						font-size: 28px;
+						font-size: 28pt;
 						font-weight: bold;
 					}
 
@@ -556,7 +555,12 @@ h1 {
 
 
 
-.footer {}
+.footer {
+	font-size: 18pt;
+	background-color: white;
+	text-align: center;
+	padding: 15px;
+}
 
 @media (max-width:700px) {
 	.nav-label {
@@ -585,17 +589,13 @@ h1 {
 		flex-direction: column;
 		padding: 10px;
 		margin: 0px;
-		gap: 0px;
-		
+		gap: 0px;	
 	}
 
 	.navigation ul li{
-	
-		
 		padding: 10px;
 		margin: 0px;
 	}
-
 
 	.nav-input:checked+.navigation {
 		display: block;
