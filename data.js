@@ -35,6 +35,53 @@
     return sortFecha;
   };
   
+  export const ordenarImportancia=(dataHarry)=>{
+    const copiaData=[...dataHarry];
+    const sortImportancia=copiaData.sort((a,b)=>{
+      if((a.books_featured_in.length) < (b.books_featured_in.length)){
+        return -1;
+      }
+    });
+    return sortImportancia;
+  }
 
+  export const filtrarCasa=(dataHarry,value)=>{
+    const copiaData=[...dataHarry];
+    const filterCasa= copiaData.filter(casa => casa.house==value)
+    return filterCasa;
+  }
+
+  export const filtrarGenero=(dataHarry,value)=>{
+    const copiaData=[...dataHarry];
+    const filterGenero= copiaData.filter(genero => genero.gender==value)
+    return filterGenero;
+  }
+  export const filtrarEspecie=(dataHarry,value)=>{
+    const copiaData=[...dataHarry];
+    const filterEspecie= copiaData.filter(especie => especie.species==value)
+    return filterEspecie;
+  }
   
-  
+  export const estadisticaCasas=(dataHarry)=>{
+
+    let casas=[];
+   
+    const estadisticaGryffindor= dataHarry.filter(casa=>casa.house==="Gryffindor")
+       // return console.log(estadisticaGryffindor.length);
+
+    const estadisticaSlytherin= dataHarry.filter(casa=>casa.house==="Slytherin")
+      //  return console.log(estadisticaSlytherin.length);
+      
+    const estadisticaRavenclaw= dataHarry.filter(casa=>casa.house==="Ravenclaw")
+       // return console.log(estadisticaRavenclaw.length);
+      
+    const estadisticaHufflepuff= dataHarry.filter(casa=>casa.house==="Hufflepuff")
+
+
+    casas.push( estadisticaGryffindor.length, estadisticaSlytherin.length,
+      estadisticaRavenclaw.length, estadisticaHufflepuff.length);
+
+    return casas;
+      
+      }
+    
