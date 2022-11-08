@@ -185,11 +185,11 @@ h1 {
 
 /* Modal Content */
 				.modal-content {
+					display: flex;
 					background-color: #fefefe;
 					margin: auto;
 					padding: 20px;
 					border: 1px solid #888;
-					width: 80%;
 					border-radius: 20px;
 				}
 
@@ -351,6 +351,7 @@ h1 {
 							display: block;
 							margin: auto;
 							border-radius: 10px;
+							
 						}
 
 						.nameCeldas2 {
@@ -389,11 +390,11 @@ h1 {
 
 /* Modal Content */
 				.modal-content1 {
+					display: fle;
 					background-color: #fefefe;
 					margin: auto;
 					padding: 20px;
 					border: 1px solid #888;
-					width: 80%;
 					border-radius: 20px;
 				}
 
@@ -442,6 +443,7 @@ h1 {
 								flex: 1 1 20%;
 								border-radius: 30px;
 								padding: 20px;
+								flex-shrink: 1;
 
 							}
 
@@ -526,11 +528,11 @@ h1 {
 
 /* Modal Content */
 				.modal-content2 {
+					display: flex;
 					background-color: #fefefe;
 					margin: auto;
 					padding: 20px;
 					border: 1px solid #888;
-					width: 80%;
 					border-radius: 20px;
 				}
 
@@ -540,6 +542,8 @@ h1 {
 						float: right;
 						font-size: 28pt;
 						font-weight: bold;
+						position: absolute;
+
 					}
 
 					.close2:hover,
